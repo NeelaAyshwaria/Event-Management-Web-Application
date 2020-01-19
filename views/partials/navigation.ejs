@@ -1,0 +1,10 @@
+
+		<div class="topnav">
+			<%   if(session === undefined){ %>
+				<a href="/connection">Connections</a>
+			<% }%>
+			<%   if(session != undefined){ %>
+				<a href="/connection">Connections</a>
+				<a href="mysavedConnections">My Connections</a>	
+			<% }%>	
+		</div>

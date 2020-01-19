@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Biker's Bay</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="fullHeight">
+		<% include partials/header.ejs %>
+		<% include partials/navigation.ejs %>
+		<div class="row fullHeight">
+
+			<div class="column right fullHeight background2 fullWidth">
+				<div class="maincontentSaved">
+          <table class="myItemsBrief">
+
+            <tr>
+              <th>Connection</th>
+              <th>Category</th>
+              <th>Going</th>
+              <th>Actions</th>
+			</tr>
+			
+
+					<% data.UserConnectionList.forEach(function(item){  %>
+				<tr>
+				<td><%= item.connectionName %></td>
+				<td><%=item.ConnectionID %></td>
+				<td><%= item.rsvp %></td>
+				<td>
+				<div >
+						<a href="/mysavedConnections/doupdate?connectionID=<%= item.ConnectionID %>&rsvp=<%= item.rsvp %>"><input type="button" class="update button" value="Update"></a>
+						<a href="/mysavedConnections/dodelete?connectionID=<%= item.ConnectionID %>"><input type="button" class="delete button" value="Delete"></a>
+				</div>
+				</td>
+				</tr>
+					<% }); %>
+
+
+			</table>
+			<br>
+			<br>
+
+			<table class="myItemsBrief">
+
+					<tr>
+					  <th>Connection</th>
+					  
+					  <th>Actions</th>
+					</tr>
+							<% data.userCreatedCons.forEach(function(item){  %>
+						<tr>
+						<td><%= item.ConnectionName %></td>
+						
+						<td>
+						<div >
+								<a href="/mysavedConnections/user/doupdate?connectionID=<%= item.ConnectionID %>"><input type="button" class="update button" value="Edit"></a>
+								<a href="/mysavedConnections/user/dodelete?connectionID=<%= item.ConnectionID %>"><input type="button" class="delete button" value="Delete"></a>
+						</div>
+						</td>
+						</tr>
+							<% }); %>
+		
+		
+					</table>
+							
+            
+        </div>
+        </div>
+			 </div>
+
+		<footer class="footer">
+			<% include partials/footer.ejs %>
+
+		</footer>
+	</div>
+</body>
+</html>

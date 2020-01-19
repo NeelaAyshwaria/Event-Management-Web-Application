@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+      <link rel="stylesheet" href="/styles/Signup.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Sign Up</title>
+    </head>
+<body>
+
+        <%
+        if(error){
+            error.forEach(function(item){%>
+      <div class="isa_error"><%=item.msg %></div> 
+            <%});
+    } %>
+        <div class="main">
+
+                <p class="sign" align="center">Signup</p>
+                <form class="form2"  method="POST" action="/mysavedConnections/signup">
+                <input class="un" type="text" name = "Username" align="center" placeholder="Username">
+                <input class="un" type="text" name = "Firstname" align="center" placeholder="Firstname">
+                <input class="un" type="text" name = "Lastname" align="center" placeholder="Lastname">
+                <input class="pass" type="password" name= "Password" align="center" placeholder="Password">
+                <input class="pass" type="password" name= "CheckPassword" align="center" placeholder="CheckPassword">
+                <input class="un" type="text" name="email" placeholder="email address" >
+                <button class="submit" align="center">Signup</button>
+                
+                </form>        
+                            
+        </div>
+        
+</body>
+        
+</html>

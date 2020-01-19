@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.signIn{
+	float:right;
+	color:forestgreen;
+}
+
+.signInPlaceholder {
+	top:25%;
+    right:15%;
+    position:absolute;
+    color:black;
+
+}
+
+
+button{
+    background-color:lightblue;
+    color:blue;
+}
+
+.checked{
+	color:red;
+}
+
+a{
+    color:white;
+    padding:10px;
+}
+
+
+.header {
+    background-color: #1b03a3;
+    padding: 1px;
+    position:relative;
+	  text-align: left;
+    border: 1px solid black;
+    height:14%;
+	  color:black;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+	text-align:left;
+    height: 5%;
+    background-color: black;
+}
+
+
+.topnav a {
+
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+
+}
+
+.listConnections a{
+	color:black;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+tr:nth-child(3){
+    text-align:center;
+}
+.row{
+	height: 70%;
+}
+
+.lastDiv{
+    position: absolute;
+     bottom: 20% ;
+     left:50%;
+}
+
+.column {
+    float: left;
+    height:100%;
+    bottom: 100px;
+
+}
+
+#image1{
+    width: 100px;
+    height: 100px;
+}
+
+#image12 {
+	width: 100px;
+	height: 90px;
+}
+
+#image2{
+    width:200px;
+    height:300px;
+}
+
+.left{
+    width: 25%;
+    height: 100%;
+}
+
+
+.right {
+    width: 75%;
+
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.footer {
+    background-color: black;
+	  color:white;
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+.footerIcons {
+	padding-left:69em;
+}
+
+
+.fullHeight{
+    height: 100%;
+}
+
+.fullWidth{
+    width:100%;
+}
+
+.background1{
+background-color:#333;
+}
+
+.background2{
+background-color: #F0FAFA;
+background-image: url("/images/BGG.jpg");
+background-repeat: no-repeat;
+background-size: 1500px 600px;
+}
+
+.breadCrumbs{
+	font-size: 20px;
+	color: black;
+}
+
+.verticalMenu{
+	list-style-type:none;
+	padding:10px;
+	line-height:45px;
+}
+.verticalMenu a{
+	text-decoration:none;
+	font-size:20px;
+	color:white;
+}
+
+.myItemsBrief {
+
+	width: 100%;
+	height: 10%;
+	background-color: white;
+	padding: 20px;
+	padding-left: 5em;
+	padding-right: 5em;
+	border-bottom: 2px solid rgb(95, 105, 241);
+	border-top: 2px solid rgb(95, 105, 241);
+	position: relative;
+	text-align: center;
+}
+
+ul{
+	padding-left:40px;
+}
+
+.maincontent{
+    text-align:center;
+}
+
+.div1 {
+	float: left;
+	padding-left:4em;
+}
+
+.div2 {
+	float: right;
+	text-align: center;
+	padding-right:5em;
+}
+
+.par{
+	padding-left:5em;
+  color: Blue;
+  font-weight: bold;
+}
+.par1 {
+	padding-left:unset;
+	padding-right: 5em;
+
+}
+#image1{
+
+	float:left;
+}
+#image12 {
+	float: left;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+
+.mainContentRightSide {
+	padding-right: 5em;
+	padding-top: 7em;
+}
+
+.maincontentConnection {
+	padding-left: 5em;
+	padding-top: 7em;
+  color: Yellow;
+}
+.maincontentSaved {
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-top: 7em;
+}
+.maincontentConnections {
+    text-align: center;
+    padding-top:5em;
+
+}
+.listConnections{
+	padding-left:35em;
+}
+.games{
+	padding:10px;
+	margin-left:50px;
+	margin-right:50px;
+	text-align:left;
+	font-size:30px;
+}
+.image-txt-container {
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+  }
+
+.image-txt-container2 {
+    display:flex;
+    align-items:center;
+    flex-direction: column  ;
+  }
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+
+  /* Full-width input fields */
+  input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 1px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .registerbtn:hover {
+    opacity: 1;
+  }

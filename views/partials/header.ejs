@@ -1,0 +1,21 @@
+<div class="header">
+
+
+  <a href="index">
+    <img id="image1" src="/images/Bike.jpg" alt="brand image placeholder"/>Biker's Bay 
+  </a>
+
+    <span class="signInPlaceholder">
+        <%   if(session === undefined){ %>
+        
+          <a href="signup">Sign Up</a>
+          <a href="login">Login</a>
+        <% }%>
+
+        <%   if(session != undefined){ %>
+          <a href="newConnection">Start New Connection</a>
+          <a href="/mysavedConnections/dologout">Logout</a>
+
+        <% }%>
+    </span>
+</div>
